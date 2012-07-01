@@ -29,6 +29,7 @@
       var lessClass = args['lessClass'] ? args['lessClass'] : '';
       var showDuration = args['showDuration'] ? args['showDuration'] : 0;
       var hideDuration = args['hideDuration'] ? args['hideDuration'] : 0;
+      var forceTruncation = args['forceTruncation'] ? args['forceTruncation'] : false;
       
       /* get html and text */
       
@@ -38,7 +39,7 @@
       
       /* only do truncation if text length exceeds specified max length */
       
-      if (text.length > maxLength) {
+      if (forceTruncation || text.length > maxLength) {
         
         /* set truncated text */
         
