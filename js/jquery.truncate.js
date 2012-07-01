@@ -1,6 +1,6 @@
 /*
 * jQuery.truncate – simple jQuery plugin for doing text truncation
-* version: 1.0.0 (2012-07-01)
+* version: 1.0.1 (2012-07-01)
 * @requires jQuery v1.7 or later
 *
 * Examples at http://lassebunk.dk/plugins/jquery/truncate/
