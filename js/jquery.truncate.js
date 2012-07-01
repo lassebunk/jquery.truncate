@@ -1,5 +1,5 @@
 /*
-* jquery.truncate – simple jQuery plugin for doing text truncation
+* jQuery.truncate – simple jQuery plugin for doing text truncation
 * version: 1.0.0 (2012-07-01)
 * @requires jQuery v1.7 or later
 *
@@ -66,8 +66,8 @@
         moreLink.click(function() {
           textElement.hide();
           htmlElement.show(showDuration);
-          moreLink.hide();
-          lessLink.show();
+          moreContainer.hide();
+          lessContainer.show();
           return false;
         })
         
@@ -91,18 +91,19 @@
         
         var lessContainer = $(document.createElement('div'));
         lessContainer.attr('class', lessClass);
+        lessContainer.attr('style', 'display: none');
         
         /* create less link */
         
         var lessLink = $(document.createElement('a'));
         lessLink.html(less);
         lessLink.attr('href', '#');
-        lessLink.attr('style', 'display: none; cursor: pointer');
+        lessLink.attr('style', 'cursor: pointer');
         lessLink.click(function() {
           htmlElement.hide(hideDuration);
           textElement.show();
-          lessLink.hide();
-          moreLink.show();
+          lessContainer.hide();
+          moreContainer.show();
           return false;
         })
         
