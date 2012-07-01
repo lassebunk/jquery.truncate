@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        font: 13px/1.5 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif;
+      }
+    </style>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.truncate.js"></script>
+    <script type="text/javascript">
+      $().ready(function() {
+        $('.truncate').truncate({
+          'ellipsis': '&hellip;',
+          'maxLength': 300,
+          'more': 'Read more',
+          'less': 'Read less',
+          'htmlClass': 'truncate_html',
+          'textClass': 'truncate_text',
+          'moreClass': 'truncate_more',
+          'lessClass': 'truncate_less',
+          'showDuration': 300,
+          'hideDuration': 300
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery.truncate Example</h1>
+    <p>
+      jQuery.truncate is simple <a href="http://jquery.com/">jQuery plugin</a> for doing text truncation.
+    </p>
+    <p>
+      Read more at my <a href="http://lassebunk.dk/plugins/jquery/truncate/">weblog</a> or <a href="https://github.com/lassebunk/jquery.truncate">GitHub</a>.
+    </p>
+    <div class="truncate">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula egestas nisl, vitae posuere leo facilisis eget. Curabitur adipiscing pulvinar dolor in tincidunt. Suspendisse sagittis egestas vehicula. Mauris id quam dolor. Vestibulum congue orci sit amet metus adipiscing porttitor. Sed scelerisque vestibulum purus, ut pharetra neque blandit vitae. Suspendisse molestie massa nec mauris porta at faucibus mauris pretium. Nulla convallis rhoncus ipsum, nec hendrerit est ultrices nec. Mauris quis ligula diam, ac rhoncus eros. Morbi faucibus ultricies dolor vel pretium.
+      </p>
+      <ul>
+        <li>Aliquam erat volutpat</li>
+        <li>Molestie metus semper sit amet</li>
+        <li>Etiam tempus mattis nulla</li>
+        <li>Id lobortis quam suscipit vitae</li>
+        <li>Nam elementum egestas enim id convallis</li>
+      </ul>
+      <p>
+        Donec tortor ante, semper eget pellentesque nec, malesuada ut ipsum. Phasellus a lorem sapien. Donec lacinia elementum ullamcorper. Vestibulum at lorem a leo consequat feugiat. Fusce in tortor eu tortor auctor ornare. Maecenas vehicula tellus non quam interdum eget lobortis leo fringilla. Sed tincidunt arcu nec lectus hendrerit ut ultrices eros ultricies. Morbi imperdiet mi sit amet leo suscipit quis ultrices ipsum imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec dui leo, in luctus nisi. Suspendisse ligula eros, lobortis consectetur porttitor ut, faucibus quis ipsum.
+      </p>
+      <p>
+        Mauris aliquet tempor aliquet. Aliquam et diam at mauris dignissim laoreet. Quisque vulputate lectus tortor. Quisque auctor porta adipiscing. Mauris nec dignissim lectus. Morbi dignissim varius lectus a mollis. Curabitur sollicitudin porttitor dolor, et pharetra est scelerisque et. Etiam egestas eros a nulla ultricies ut volutpat lorem elementum. Etiam porta porta faucibus. Suspendisse potenti.
+      </p>
+    </div>
+    <p>
+      Copyright &copy; 2012 <a href="http://lassebunk.dk">Lasse Bunk</a>
+    </p>
+  </body>
+</html>
