@@ -1,6 +1,6 @@
 /*
 * jQuery.truncate – simple jQuery plugin for doing text truncation
-* version: 1.0.1 (2012-07-01)
+* version: 1.0.2 (2012-07-12)
 * requires: jQuery v1.7 or later
 *
 * Example at http://lassebunk.dk/plugins/jquery/truncate/
@@ -35,7 +35,7 @@
       
       var element = $(this);
       var html = element.html();
-      var text = html.replace(/(<([^>]+)>)|\n/ig,'')
+      var text = html.replace(/(<([^>]+)>)/ig,'')
       
       /* only do truncation if text length exceeds specified max length */
       
