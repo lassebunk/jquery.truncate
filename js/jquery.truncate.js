@@ -1,6 +1,6 @@
 /*
 * jQuery.truncate – simple jQuery plugin for doing text truncation
-* version: 1.0.3 (2012-07-12)
+* version: 1.0.4 (2012-08-21)
 * requires: jQuery v1.7 or later
 *
 * Example at http://lassebunk.dk/plugins/jquery/truncate/
@@ -101,10 +101,11 @@
         lessLink.attr('href', '#');
         lessLink.attr('style', 'cursor: pointer');
         lessLink.click(function() {
-          htmlElement.hide(hideDuration);
-          textElement.show();
           lessContainer.hide();
-          moreContainer.show();
+          htmlElement.hide(hideDuration, function() {
+            textElement.show();
+            moreContainer.show();
+          });
           return false;
         })
         
