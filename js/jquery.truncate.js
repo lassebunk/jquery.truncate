@@ -1,6 +1,6 @@
 /*
 * jQuery.truncate – simple jQuery plugin for doing text truncation
-* version: 1.0.4 (2012-08-21)
+* version: 1.0.5 (2012-08-21)
 * requires: jQuery v1.7 or later
 *
 * Example at http://lassebunk.dk/plugins/jquery/truncate/
@@ -43,7 +43,7 @@
         
         /* set truncated text */
         
-        text = text.trim().substr(0, maxLength) + ellipsis;
+        text = $.trim(text).substr(0, maxLength) + ellipsis;
         element.html('');
         
         /* create truncated text element */
